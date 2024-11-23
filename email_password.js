@@ -14,7 +14,7 @@ email.onchange=function(){
         emailError.textContent="Make sure email is more than 3 characters has @ and ."
     }
 
-}
+} 
 password.onchange=()=>{
     const passwordvalue=password.value;
     if(passwordvalue.length>8){
