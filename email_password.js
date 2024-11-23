@@ -4,7 +4,7 @@ const password=document.getElementById("password")
 const passwordError=document.getElementById("passwordError")
 const form=document.getElementById("form")
 const succes=document.getElementById("succes");
-email.oninput=function(){
+email.onchange=function(){
     const emailvalue=email.value;
     if (emailvalue.length>3&&
     emailvalue.includes('@')&&
@@ -15,7 +15,7 @@ email.oninput=function(){
     }
 
 }
-password.oninput=()=>{
+password.onchange=()=>{
     const passwordvalue=password.value;
     if(passwordvalue.length>8){
         passwordError.textContent="";
